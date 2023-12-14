@@ -1,11 +1,14 @@
 <template lang="">
-   <section>
+   <section class="nav-container">
     <nav>
-        <div>
+        <div class="logo-container">
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
-        <ul>
-            <li>
+        <ul class="nav-links-container">
+            <li v-for="item in navLinksNamesList">
+                {{
+                    item
+                }}
             </li>
         </ul>
     </nav>
@@ -17,7 +20,7 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            linksNamesList: [
+            navLinksNamesList: [
                 "CHARACTERS",
                 "COMICS",
                 "MOVIES",
@@ -34,6 +37,6 @@ export default {
 }
 </script>
 
-<style lang="">
-    
+<style lang="scss">
+    @use '../styles/general.scss' as *;
 </style>
