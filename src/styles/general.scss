@@ -1,10 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .nav-container {
     nav{
         display: flex;
-        justify-content: center;
+        margin: 0 20rem;
+        padding: 1rem 0;
+        .logo-container {
+            flex-basis: 40%;
+            img{
+                width: 4rem;
+            }
+        }
+
         ul{
+            flex-basis: 60%;
             list-style: none;
             display: flex;
+            align-items: center;
+            li{
+                margin-right: 2rem;
+            }
         }
     }
 }
