@@ -1,11 +1,23 @@
 <template lang="">
     <main>
-        <h1>Contentenuto qui</h1>
+        <section>
+            <div class="main-background-image">
+
+            </div>
+            <div class="main-content-container">
+                <CardsContainer />
+            </div>
+        </section>
     </main>
 </template>
 <script>
+import CardsContainer from './CardsContainer.vue';
+
 export default {
     name: "AppMain",
+    components: {
+        CardsContainer
+    },
     data() {
         return {
 
