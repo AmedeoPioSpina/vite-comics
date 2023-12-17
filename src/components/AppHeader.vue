@@ -1,18 +1,20 @@
 <template lang="">
-   <section class="nav-container">
-    <nav>
-        <div class="logo-container">
-            <img src="../assets/img/dc-logo.png" alt="">
-        </div>
-        <ul class="nav-links-container">
-            <li v-for="item in navLinksNamesList">
-                {{
-                    item
-                }}
-            </li>
-        </ul>
-    </nav>
-   </section>
+    <header>
+        <section class="nav-container">
+            <nav>
+                <div class="logo-container">
+                    <img src="../assets/img/dc-logo.png" alt="">
+                </div>
+                <ul class="nav-links-container">
+                    <li v-for="item in navLinksNamesList">
+                        {{
+                            item
+                        }}
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 </template>
 
 <script>
