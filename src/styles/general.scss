@@ -33,6 +33,9 @@ body{
                         font-weight: 500;
                         margin-right: 2rem;
                         border-bottom: 4px solid white;
+                        &:last-child {
+                            margin-right: 0;
+                        }
                         &:hover {
                             color: $color-blue;
                             border-bottom: 4px solid $color-blue;
