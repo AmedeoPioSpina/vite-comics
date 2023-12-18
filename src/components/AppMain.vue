@@ -2,7 +2,7 @@
     <main>
         <section>
             <div class="main-background-image">
-
+                
             </div>
             <div class="main-content-container">
                 <CardsContainer />

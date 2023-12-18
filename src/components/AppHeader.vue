@@ -6,7 +6,7 @@
                     <img src="../assets/img/dc-logo.png" alt="">
                 </div>
                 <ul class="nav-links-container">
-                    <li v-for="item in navLinksNamesList">
+                    <li v-for="(item, index) in navLinksNamesList" :class="index == activeIndex ? active : no-active">
                         {{
                             item
                         }}
@@ -33,7 +33,8 @@ export default {
                 "FANS",
                 "NEWS",
                 "SHOP"
-            ]
+            ],
+            activeIndex: 1,
         }
     }
 }
